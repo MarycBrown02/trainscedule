@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
     <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -22,16 +23,19 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-sm">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title" >train name</h5>
                       </div>
                       <div class="col-sm">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title">destimation</h5>
                       </div>
                       <div class="col-sm">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title">frequency(min)</h5>
                       </div>
                       <div class="col-sm">
-                        <h5 class="card-title"></h5>
+                        <h5 class="card-title">next arrival</h5>
+                      </div>
+                      <div class="col-sm">
+                        <h5 class="card-title">minutes away</h5>
                       </div>
                     </div>
                     <div class="row">
@@ -55,30 +59,27 @@
                   <div class="card">
                     <div class="card-body">
                       <div class="col">
-                        
+                        <input class="form-control" id="trainName"type="text" placeholder="Train Name">
                       </div>
                       <div class="col"></div>
                       <div class="w-100"></div>
                       <br>
                       <div class="col">
-                        
+                        <input class="form-control" type="text" placeholder="First Train Time (HH:mm-miltary time)">
                       </div>
                       <div class="col"></div>
                       <div class="w-100"></div>
                       <br>
                       <div class="col">
-                        
+                        <input class="form-control" type="text" placeholder="Frequency(min)">
                       </div>
                       <div class="col"></div>
                       <div class="w-100"></div>
                       <br>
-                      <div class="col">
-                        
-                      </div>
                       <div class="col"></div>
                       <br>
                       <div class="w-100"></div>
-                      
+                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
                   </div>
                 </div>
